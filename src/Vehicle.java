@@ -1,4 +1,4 @@
-package machine;
+//package machine;
 
 import java.text.SimpleDateFormat;
 import java.util.Random;
@@ -100,4 +100,4 @@ public class Vehicle {
         System.out.println("Vehicle's stop() executed");
     }
 
-}//end class
+}
