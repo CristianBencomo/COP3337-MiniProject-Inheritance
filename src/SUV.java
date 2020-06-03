@@ -35,11 +35,10 @@ public class SUV extends Car {
 
     @Override
     public void displayInfo() {
-        
-        displayHeader();
-        
-        super.setSeeHeader(false);
-
+            displayHeader();
+            System.out.println("Classification:\t\t" + CLASSIFICATION);
+            super.setSeeHeader(false);
+    
         super.displayInfo();
     
         System.out.println("All-wheel-Drive:\t" + hasAllWheelDrive);

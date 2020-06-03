@@ -45,9 +45,8 @@ public class Car extends Vehicle {
         if(seeHeader) {
             displayHeader();
             System.out.println("Classification:\t\t" + CLASSIFICATION);
-
-            super.setSeeHeader(false);
         }
+        super.setSeeHeader(false);
 
         super.displayInfo();
         System.out.println("Color\t\t\t" + color);
@@ -64,6 +63,10 @@ public class Car extends Vehicle {
     public void go() {
         System.out.println("");
         System.out.println("Car's go() executed");
+    }
+    
+    public void setSeeHeader(boolean seeHeader) {
+        this.seeHeader = seeHeader;
     }
 
     //overload method
