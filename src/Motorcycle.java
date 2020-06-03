@@ -20,20 +20,19 @@ public class Motorcycle extends Vehicle {
         id = CODE + "-" + id;
 
         this.color = color;
-        this.engineType = engineType;
         mileage = 0.0;
 
     }
 
     // Instance methods
-    
     private void displayHeader() {
         System.out.println("");
         System.out.println("============================");
-        System.out.println("Mehicle Info");
+        System.out.println("Motorcycle Info");
         System.out.println("============================");
     }
 
+    @Override
     public void displayInfo() {
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy hh:mm:ss");
@@ -44,7 +43,7 @@ public class Motorcycle extends Vehicle {
         
         System.out.println("ID:\t\t\t" + id);
         System.out.println("Factory:\t\t" + factory);
-        System.out.println("Build Time\t\t" + dateFormat.format(buildTime));
+        System.out.println("Build Time\t\t" + dateFormat.format(super.getBuildTime()));
     }
 
     public void go() {

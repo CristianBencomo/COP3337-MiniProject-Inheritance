@@ -21,7 +21,7 @@ public class Controller {
         car1.displayInfo();
         car2.displayInfo();
 
-        ((Vehicle)car2).displayInfo();
+        ((Vehicle)car2).displayInfo(); // wouldnt this display Vehicle info instead?
 
         car2.go(172.3);
         car2.displayInfo();

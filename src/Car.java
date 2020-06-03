@@ -1,8 +1,5 @@
 //package machine;
 
-import java.text.SimpleDateFormat;
-
-
 public class Car extends Vehicle {
 
     //Class variables
@@ -45,20 +42,18 @@ public class Car extends Vehicle {
     @Override
     public void displayInfo() {
 
-        SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy hh:mm:ss");
-
         if(seeHeader) {
             displayHeader();
             System.out.println("Classification:\t\t" + CLASSIFICATION);
 
-            super.setHeader(false);
+            super.setSeeHeader(false);
         }
 
         super.displayInfo();
-        System.out.println("Color\t\t" + color);
+        System.out.println("Color\t\t\t" + color);
         System.out.println("Engine Type\t\t" + engineType);
 
-        system.out.printf("Mileage:\t\t%-10.1f\n", mileage);
+        System.out.printf("Mileage:\t\t%-10.1f\n", mileage);
 
         if(!(super.getSeeHeader() ) ) {
             super.setSeeHeader(true);

@@ -1,7 +1,5 @@
 //package machine;
 
-import java.text.SimpleDateFormat;
-
 
 public class SUV extends Car {
 
@@ -37,15 +35,13 @@ public class SUV extends Car {
 
     @Override
     public void displayInfo() {
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy hh:mm:ss");
-
+        
         displayHeader();
-
+        
         super.setSeeHeader(false);
 
         super.displayInfo();
-       
+    
         System.out.println("All-wheel-Drive:\t" + hasAllWheelDrive);
 
         if(!(super.getSeeHeader() ) ) {
